@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+
+    <main class="body">
+        <section class="">
+            <div class="group shadow-lg w-75 mx-auto mt-5 p-5 text-center">
+                <h1 class="fs-1 text-info">Smart Login System</h1>
+                
+                <input type="text" placeholder="enter your email"onkeyup="validation()" id="emailInput" class="form-control w-100 my-3">
+                <p class="alert alert-danger text-center d-none p-2" id="validemail">Email is invalid</p>
+
+                <input id="passwordInput" class="form-control my-3" onkeyup="validation()" placeholder="Enter your password" type="password">
+                <p class="alert alert-danger text-center d-none p-2" id="validpassword">Email is invalid</p>
+
+                <p id="alertMessage" class="d-block"></p>
+                <button class="btn btn-outline-info form-control my-4"disabled  id="loginBTN">login</button>
+
+                <p class="fs-5 text-white ">Don’t have an account?
+                    <span><a href="sign.html" class="link">Sign Up</a></span>
+                </p>
+                
+
+                
+            </div>
+        </section>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
